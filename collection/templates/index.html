@@ -1,12 +1,9 @@
-{% load staticfiles %}
-<!doctype html>
-<html>
-    <head>
-        <title>Weather App</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    </head>
-    <body>
-        <h1>Welcome!</h1>
-        <p>Please log in.</p>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+    Homepage - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>Welcome!</h1>
+    <p>Please login or register..</p>
+{% endblock content %}
