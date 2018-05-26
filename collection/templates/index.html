@@ -4,6 +4,12 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Welcome!</h1>
-    <p>Please login or register..</p>
+    {% for day in days %}
+    <h2>{{ day.date }}</h2>
+    <h2>{{ day.day }}</h2>
+    <h2>{{ day.hightemp }}</h2>
+    <h2>{{ day.lowtemp }}</h2>
+    <h2>{{ day.wind }}</h2>
+    <h2>{{ day.rain }}</h2>
+    {% endfor %}
 {% endblock content %}
