@@ -5,11 +5,12 @@
 
 {% block content %}
     {% for day in days %}
-    <h2>{{ day.date }}</h2>
-    <h2>{{ day.day }}</h2>
-    <h2>{{ day.hightemp }}</h2>
-    <h2>{{ day.lowtemp }}</h2>
-    <h2>{{ day.wind }}</h2>
-    <h2>{{ day.rain }}</h2>
+    <h3>{{ day.date }}</h3>
+    <h3> <a href="{% url 'day_detail' slug=day.slug %}">{{ day.day }} </a></h3>
+    <h3>{{ day.hightemp }}</h3>
+    <h3>{{ day.lowtemp }}</h3>
+    <h3>{{ day.wind }}</h3>
+    <h3>{{ day.rain }}</h3>
+    <br></br>
     {% endfor %}
 {% endblock content %}

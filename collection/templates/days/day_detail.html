@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    Homepage - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h2>{{ day.date }}</h2>
+    <h2>{{ day.day }}</h2>
+    <h2>{{ day.hightemp }}</h2>
+    <h2>{{ day.lowtemp }}</h2>
+    <h2>{{ day.wind }}</h2>
+    <h2>{{ day.rain }}</h2>
+{% endblock content %}
